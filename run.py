@@ -36,7 +36,7 @@ if __name__ == '__main__':
         log.info(f'[Sample {name}] Download image and masks')
         original = io.imread(sample['Labeled Data'])
         mask_positive = io.imread(sample['Masks']['Positive'])
-        mask_negative = io.imread(sample['Masks']['Positive'])
+        mask_negative = io.imread(sample['Masks']['Negative'])
 
         log.info(f'[Sample {name}] Process')
         # Do some processing here :)
